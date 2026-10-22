@@ -698,3 +698,17 @@ button.chip{cursor:pointer}
 .altstart{display:flex;flex-direction:column;align-items:center;gap:8px;border-top:1px solid var(--hair);padding-top:16px;margin-top:4px;text-align:center}
 .altstart span{font-size:14px;color:var(--muted)}
 .cnsy{display:flex;flex-direction:column;gap:14px}
+
+/* 그림 아이콘 칸 — 처음 안내·촬영 안내 공통 */
+.tile{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--navy-soft);color:var(--navy);flex:none;position:relative}
+.tile .ic{width:24px;height:24px}
+.tile::after{content:"";position:absolute;right:7px;bottom:7px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.obicon .tile{width:68px;height:68px;border-radius:20px}
+.obicon .tile .ic{width:36px;height:36px;stroke-width:1.6}
+.obicon .tile::after{right:10px;bottom:10px;width:8px;height:8px}
+.obicon svg{width:68px;height:68px}
+.obicon .tile svg{width:36px;height:36px}
+.gtip{align-items:flex-start}
+.inl{display:inline-grid;place-items:center;vertical-align:-3px;margin-right:2px;color:var(--navy)}
+.inl .ic{width:16px;height:16px}
+.savedpop i .ic{width:28px;height:28px;stroke-width:2.6}
