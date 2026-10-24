@@ -712,3 +712,50 @@ button.chip{cursor:pointer}
 .inl{display:inline-grid;place-items:center;vertical-align:-3px;margin-right:2px;color:var(--navy)}
 .inl .ic{width:16px;height:16px}
 .savedpop i .ic{width:28px;height:28px;stroke-width:2.6}
+
+/* ---- 0.1.38 보완 ---- */
+/* 한글은 단어 단위로 줄바꿈 (한 글자만 다음 줄로 넘어가지 않게) */
+body{word-break:keep-all;overflow-wrap:break-word}
+.hero h1,.dn h2,.obcard h1{text-wrap:balance}
+/* 고객 정보 칩은 한 덩어리로 */
+.facts span{white-space:nowrap}
+/* 설정의 버튼 줄(자동으로 닫기 등)은 좁은 폰에서 칸을 나눠 꽉 채움 */
+@media (max-width:600px){.sblock .seg{width:100%}.sblock .seg button{flex:1 1 0;min-width:0;padding:8px 2px}}
+/* 알림은 화면 위쪽에 (아래쪽 버튼을 가리지 않게) */
+.toast{bottom:auto;top:calc(70px + var(--sat));animation:toastIn .18s ease-out}
+@keyframes toastIn{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
+/* 방문 기록: 증상 이름이 비었을 때 칸을 흔들어 표시 */
+.vname.need{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-5px)}50%{transform:translateX(5px)}75%{transform:translateX(-3px)}}
+/* 양식 문구 글자 수 */
+.fvcnt{display:block;text-align:right;margin-top:-4px}.fvcnt.full{color:var(--accent);font-weight:600}
+/* 가로로 눕힌 폰: 첫 화면을 낮게 접어서 '동의서 작성하기'가 바로 보이게 */
+@media (orientation:landscape) and (max-height:540px){
+  .home{padding-top:calc(6px + var(--sat))}
+  .home header{min-height:40px}
+  .hero{padding:4px 0 8px}
+  .hero .card{padding:16px 24px;gap:8px;max-width:560px}
+  .hero .hillu,.hero .hlogo,.hero .steps,.hero p br{display:none}
+  .hero h1{font-size:22px}.hero p{font-size:15px}
+  .hero .btn{min-height:54px;font-size:18px;margin-top:2px;padding:10px 30px}
+}
+/* PC 넓은 화면: 고객 상세를 두 칸으로 (왼쪽 체형 기록, 오른쪽 방문·동의서·메모) */
+@media (min-width:1400px){
+  .dwrap{display:grid;max-width:1500px;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:start}
+  .dwrap>*{grid-column:1 / -1}
+  .dwrap>.posture{grid-column:1;grid-row:span 3}
+  .dwrap>.visits,.dwrap>.consents,.dwrap>.memo{grid-column:2}
+}
+/* 사진 측정 진행 화면 */
+.progov{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:rgba(20,30,42,.55);padding:20px}
+.progcard{background:var(--paper);border-radius:22px;padding:26px 28px 22px;min-width:min(320px,100%);max-width:420px;display:flex;flex-direction:column;align-items:center;gap:14px;box-shadow:var(--sh2);text-align:center}
+.progcard .spin{width:34px;height:34px;border-width:4px}
+.progcard b{font-size:19px}
+.pgsteps{list-style:none;margin:0;padding:0;display:flex;gap:6px;width:100%;justify-content:center}
+.pgsteps li{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:12.5px;color:var(--muted);flex:1;min-width:0}
+.pgsteps li i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;background:var(--bg);border:1px solid var(--line)}
+.pgsteps li i .ic{width:16px;height:16px}
+.pgsteps li.done i{background:var(--navy);border-color:var(--navy);color:#fff}
+.pgsteps li.on{color:var(--navy);font-weight:700}
+.pgsteps li.on i{border:2px solid var(--accent);color:var(--accent)}
+.progcard small{min-height:1.2em;font-size:12.5px}
