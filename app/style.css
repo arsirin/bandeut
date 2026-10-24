@@ -759,3 +759,9 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .pgsteps li.on{color:var(--navy);font-weight:700}
 .pgsteps li.on i{border:2px solid var(--accent);color:var(--accent)}
 .progcard small{min-height:1.2em;font-size:12.5px}
+/* 촬영 순간: 화면을 멈춰 보여주고 '찍었어요' */
+.cfreeze{position:absolute;z-index:4;object-fit:cover}
+.cdone{position:absolute;z-index:6;left:50%;top:42%;transform:translate(-50%,-50%);background:rgba(20,30,42,.82);color:#fff;border-radius:20px;padding:20px 28px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.35);animation:fadeIn .15s ease-out}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.cdone b{display:flex;align-items:center;gap:8px;font-size:24px}.cdone b .ic{width:28px;height:28px;color:#6fe3b4}
+.cdone span{font-size:16px;line-height:1.5;opacity:.92}
