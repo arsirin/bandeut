@@ -765,3 +765,30 @@ body{word-break:keep-all;overflow-wrap:break-word}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 .cdone b{display:flex;align-items:center;gap:8px;font-size:24px}.cdone b .ic{width:28px;height:28px;color:#6fe3b4}
 .cdone span{font-size:16px;line-height:1.5;opacity:.92}
+/* PIN 숫자판: 크게, 누르는 즉시 반응 */
+.pad{grid-template-columns:repeat(3,84px);gap:12px 18px}
+.pad button{width:84px;height:84px;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.pad button.hit{background:var(--navy);color:#fff;transform:scale(.94);transition:none}
+.pad button.fn.hit{background:var(--hair);color:var(--ink)}
+@media (max-height:640px){.pad{grid-template-columns:repeat(3,72px);gap:10px 16px}.pad button{width:72px;height:72px}}
+/* 동의서 펜 굵기: 펜을 누르면 아래 가운데에 점으로 */
+.penopt[hidden]{display:none}
+.cform .penopt.dots{top:auto;bottom:14px;left:50%;transform:translateX(-50%);border-radius:999px;padding:6px 12px;gap:8px;z-index:4;box-shadow:var(--sh2)}
+.penopt.dots .pw{width:46px;height:46px;border-radius:50%}
+.penopt.dots .pw i{width:var(--d);height:var(--d);border-radius:50%;background:var(--ink)}
+/* 방문 기록: 손글씨 메모 + 아래 펜 굵기 막대 */
+.vmemoink{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+.vmemoink canvas{display:block;width:100%;height:auto;touch-action:none}
+.vmrow{padding:6px 10px;border-top:1px solid var(--hair);background:var(--bg)}
+.vmemoink[hidden],.visit textarea[hidden]{display:none}
+.seg.sm button{padding:5px 12px;min-height:34px;font-size:14px}
+.vtools{display:flex;align-items:center;justify-content:center;gap:10px;padding:8px 16px calc(8px + var(--sab));border-top:1px solid var(--line);background:var(--paper);flex:none}
+.vtools .pw{width:48px;height:48px;border-radius:50%;border:none;background:none;display:grid;place-items:center;padding:0}
+.vtools .pw i{display:block;width:var(--d);height:var(--d);border-radius:50%;background:#e87a4e}
+.vtools .pw[aria-pressed=true]{background:var(--navy-soft);box-shadow:inset 0 0 0 1.5px var(--navy)}
+.vmemoimg{width:100%;border:1px solid var(--hair);border-radius:10px}
+.editor.visit{grid-template-rows:auto minmax(0,1fr) auto}
+.pain button{padding:0;white-space:nowrap;letter-spacing:-.04em}
+@media (max-width:600px){.pain{gap:3px}.pain button{font-size:14px}}
+.cform .penopt.dots{height:62px;box-sizing:border-box}
+.penopt.dots .pw{width:46px;height:46px;flex:none}
