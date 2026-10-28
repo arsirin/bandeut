@@ -843,3 +843,15 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .vbars.dense{gap:2px}.vbars.dense .vv{font-size:10px}.vbars.dense .vk{font-size:10.5px;overflow:visible}
 .vbars.ser .vt i{background:var(--accent)}
 .acts{grid-template-columns:repeat(3,minmax(0,1fr))}
+/* 통계: 기간 직접 정하기 · 볼 항목 고르기 */
+@media (max-width:600px){.stseg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}}
+.strange{display:flex;align-items:flex-end;gap:10px;padding:12px 14px;flex-wrap:wrap}
+.strange label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted);flex:1;min-width:130px}
+.strange input{font-size:16px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.strange span{padding-bottom:10px;color:var(--muted)}
+.stitems{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.stitems .muted{margin-right:4px}
+.chipt{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);background:var(--paper);color:var(--muted);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600;min-height:36px}
+.chipt .ic{width:15px;height:15px}
+.chipt[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.stlbl{margin:-4px 0 0}
