@@ -880,3 +880,7 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .xlv span{display:flex;flex-direction:column;gap:2px}.xlv small{font-size:12.5px}
 .xldlg p .ic{width:14px;height:14px;vertical-align:-2px}
 .xldlg p .ic{display:inline-block;margin-right:3px}
+/* 전후 비교 표: 항목 이름이 한 글자씩 쪼개지지 않게 */
+.ctable td:first-child{min-width:78px;word-break:keep-all}
+.ctable td:nth-child(4){white-space:nowrap}
+#rt .chipt{min-height:34px;padding:5px 12px}
