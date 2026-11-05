@@ -855,3 +855,28 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .chipt .ic{width:15px;height:15px}
 .chipt[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
 .stlbl{margin:-4px 0 0}
+/* 고객 목록: 오늘 방문 체크 */
+.crwrap{display:flex;align-items:stretch;border-bottom:1px solid var(--hair)}
+.crwrap .crow{border-bottom:none;padding-left:8px;min-width:0}
+.vchk{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:66px;margin:8px 0 8px 10px;border:1.5px dashed var(--line);border-radius:14px;background:var(--paper);color:var(--muted);font-size:11.5px;font-weight:700;padding:4px 2px;line-height:1.15}
+.vchk .ic{width:20px;height:20px}
+.vchk.on{border:1.5px solid var(--ok);background:var(--ok-soft);color:var(--ok)}
+.vchk:active{transform:scale(.95)}
+.todaybar{padding:8px 12px 4px}
+.tdchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--ink);min-height:38px}
+.tdchip .ic{width:16px;height:16px;color:var(--ok)}
+.tdchip[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}.tdchip[aria-pressed=true] .ic{color:#fff}
+.smpbar{display:flex;align-items:center;gap:8px;margin:8px 12px 0;padding:9px 12px;border-radius:12px;background:var(--navy-soft);color:var(--navy);font-size:13.5px;font-weight:600}
+.smpbar .ic{width:17px;height:17px;flex:none}.smpbar span{flex:1;min-width:0}.smpbar .link{font-weight:700}
+.empty .ghost{margin-top:12px}
+.tld>b.nolink{text-decoration:none;color:var(--ink)}
+/* 엑셀 내보내기 창 */
+.xldlg{display:flex;flex-direction:column;gap:12px;max-width:560px}
+.xlfix{display:flex;gap:8px;flex-wrap:wrap}.xlfix span{display:inline-flex;align-items:center;gap:4px;background:var(--bg);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600;color:var(--navy)}
+.xlfix .ic{width:15px;height:15px}
+.xlpick{display:flex;flex-wrap:wrap;gap:6px}
+.xlv{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:12px;cursor:pointer}
+.xlv input{width:20px;height:20px;margin-top:2px;flex:none}
+.xlv span{display:flex;flex-direction:column;gap:2px}.xlv small{font-size:12.5px}
+.xldlg p .ic{width:14px;height:14px;vertical-align:-2px}
+.xldlg p .ic{display:inline-block;margin-right:3px}
