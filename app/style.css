@@ -884,3 +884,22 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .ctable td:first-child{min-width:78px;word-break:keep-all}
 .ctable td:nth-child(4){white-space:nowrap}
 #rt .chipt{min-height:34px;padding:5px 12px}
+/* 이용권 */
+.passbar{display:flex;align-items:center;gap:8px;border:none;background:var(--navy-soft);color:var(--navy);font-size:13.5px;font-weight:600;text-align:left;padding:10px 12px;margin:8px 12px 6px;border-radius:12px;width:calc(100% - 24px)}
+.passbar span{flex:1;min-width:0}.passbar .ic{width:18px;height:18px;flex:none}
+.passbar.end{background:var(--accent-soft);color:#8a3d1f}
+.passcard{display:flex;flex-direction:column;gap:14px;max-width:520px}
+.passhead{display:flex;align-items:center;gap:12px}.passhead h2{margin:0}.passhead p{margin:2px 0 0}
+.passwhy{display:flex;gap:8px;align-items:flex-start;background:var(--accent-soft);color:#8a3d1f;border-radius:12px;padding:10px 12px;font-size:14px;font-weight:600}
+.passwhy .ic{width:18px;height:18px;flex:none;margin-top:1px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.plan{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;border:1.5px solid var(--line);background:var(--paper);border-radius:16px;padding:16px 14px 14px;color:var(--ink)}
+.plan b{font-size:16px}.plan small{color:var(--muted);font-size:12.5px;line-height:1.35}
+.plan .pprice{font-size:24px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums}.plan .pprice small{font-size:13px;font-weight:600;margin-left:2px}
+.plan.best{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.plan .pbadge{position:absolute;top:-10px;right:12px;background:var(--accent);color:#fff;font-size:11.5px;font-weight:800;border-radius:999px;padding:2px 9px}
+.plan:disabled{opacity:.55}
+.plan:not(:disabled):active{transform:scale(.98)}
+.passnote{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}.passnote.warn{color:#8a3d1f;font-weight:600}
+.passfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--hair);padding-top:10px}
+@media (max-width:420px){.plans{grid-template-columns:1fr}}
