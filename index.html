@@ -3,147 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>반듯 체형측정 개인정보처리방침</title>
-<meta name="description" content="반듯 체형측정 앱이 어떤 정보를 어디에 저장하고 어떻게 지우는지 안내합니다.">
+<title>반듯 체형측정</title>
+<meta name="description" content="사진 한 장으로 체형을 재고, 동의서와 고객 기록까지 한 번에. 1인 샵을 위한 체형측정 앱 반듯.">
+<meta property="og:title" content="반듯 체형측정">
+<meta property="og:description" content="사진 한 장으로 체형 측정 · 전자 동의서 · 고객 기록">
+<meta property="og:image" content="https://bandeut.co.kr/icon.png">
 <link rel="icon" href="icon.png">
 <style>
 :root{--navy:#344c65;--accent:#e87a4e;--ink:#1e2b3a;--muted:#67737f;--line:#dce2e9;--bg:#f1f4f7;--paper:#fff;--soft:#e9eff5}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:16px;line-height:1.75;word-break:keep-all}
-header{background:var(--navy);color:#fff;padding:28px 16px 30px}
-.w{max-width:780px;margin:0 auto}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:16px;line-height:1.7;word-break:keep-all}
+.w{max-width:880px;margin:0 auto;padding:0 16px}
+header{background:var(--navy);color:#fff;padding:40px 0 44px}
 .brand{display:flex;align-items:center;gap:14px}
-.brand img{width:56px;height:56px;border-radius:14px}
-.brand b{display:block;font-size:22px}
+.brand img{width:64px;height:64px;border-radius:16px}
+.brand b{display:block;font-size:24px}
 .brand span{font-size:14px;opacity:.8}
-h1{font-size:26px;margin:22px 0 4px;line-height:1.35}
-.date{font-size:14px;opacity:.8}
-main{padding:20px 16px 48px}
-section{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:0 0 14px}
-h2{font-size:18px;margin:0 0 8px;color:var(--navy);display:flex;gap:8px;align-items:baseline}
-h2 i{font-style:normal;color:var(--accent);font-size:14px;font-weight:800}
-p{margin:0 0 10px}
-ul{margin:0 0 10px;padding-left:20px}
-li{margin:2px 0}
-table{width:100%;border-collapse:collapse;font-size:14.5px;margin:6px 0 10px}
-th,td{border-top:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
-th{background:var(--soft);color:var(--navy);font-weight:700;white-space:nowrap}
-.note{background:var(--soft);border-radius:12px;padding:12px 14px;font-size:15px}
-.key{background:#fdefe8;border-radius:12px;padding:12px 14px;font-size:15px}
+h1{font-size:clamp(26px,5vw,36px);line-height:1.3;margin:28px 0 10px}
+.lead{font-size:17px;opacity:.9;margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none;font-size:16px}
+.btn.main{background:var(--accent);color:#fff}
+.btn.sub{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)}
+main{padding:28px 0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card h2{font-size:17px;margin:0 0 6px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.price{margin-top:22px}
+.price .row{display:flex;flex-wrap:wrap;gap:12px}
+.plan{flex:1 1 220px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.plan.best{border:2px solid var(--accent)}
+.plan b{display:block;font-size:15px;color:var(--navy)}
+.plan .p{font-size:26px;font-weight:800;margin:4px 0}
+.plan small{color:var(--muted)}
+h3{font-size:19px;margin:30px 0 12px;color:var(--navy)}
+.pc{background:var(--soft);border-radius:18px;padding:18px 20px;margin-top:12px}
+.pc p{margin:0 0 6px}
 a{color:var(--navy);font-weight:600}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 32px}
-@media (max-width:520px){section{padding:16px}table{font-size:13.5px}th,td{padding:7px 5px}}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 36px}
+footer a{color:var(--muted);margin:0 6px}
 </style>
 </head>
 <body>
 <header><div class="w">
-  <div class="brand"><img src="icon.png" alt=""><div><b>반듯 체형측정</b><span>체형 측정 · 고객 동의서 앱</span></div></div>
-  <h1>개인정보처리방침</h1>
-  <div class="date">시행일 2026년 10월 22일</div>
-</div></header>
-<main class="w">
-
-<section>
-  <h2><i>요약</i>먼저 알아두실 것</h2>
-  <div class="key">
-    <ul style="margin:0">
-      <li>반듯 체형측정(이하 ‘앱’)은 체형관리샵·물리치료 센터 등 <b>사업자가 고객 기록을 관리하는 앱</b>이에요.</li>
-      <li>고객 기록과 사진은 기본으로 <b>사용하는 기기 안에만</b> 저장돼요. 개발자는 이 기록을 받지 않아요.</li>
-      <li>‘기기 간 동기화’를 켜면 기록이 <b>기기에서 잠긴(암호화된) 상태로</b> 서버에 올라가요. 잠금을 푸는 열쇠는 서버에 보내지 않아서 개발자도 내용을 볼 수 없어요.</li>
-      <li>사진 속 자세를 찾는 AI는 <b>기기 안에서</b> 돌아가요. 사진을 외부로 보내 분석하지 않아요.</li>
-      <li>광고, 사용자 추적, 정보 판매는 하지 않아요.</li>
-    </ul>
+  <div class="brand"><img src="icon.png" alt=""><div><b>반듯 체형측정</b><span>체형 측정 · 전자 동의서 · 고객 기록</span></div></div>
+  <h1>사진 한 장으로 체형을 재고,<br>기록까지 한 번에.</h1>
+  <p class="lead">체형관리 · 필라테스 · 피부샵 원장님을 위한 태블릿 앱이에요.</p>
+  <div class="cta">
+    <a class="btn main" href="https://play.google.com/store/apps/details?id=kr.bandeut.app">구글 플레이에서 받기</a>
+    <a class="btn sub" href="app/">PC에서 기록 보기</a>
   </div>
-</section>
+</div></header>
+<main><div class="w">
+  <div class="grid">
+    <div class="card"><h2>체형 측정</h2><p>정면·측면 사진을 찍으면 어깨·골반 기울기, 거북목을 바로 재요. 지난번과 나란히 비교할 수 있어요.</p></div>
+    <div class="card"><h2>전자 동의서</h2><p>개인정보·시술 동의서를 태블릿에 바로 서명받아요. 양식은 샵에 맞게 고칠 수 있어요.</p></div>
+    <div class="card"><h2>고객 · 방문 기록</h2><p>방문할 때마다 메모와 손글씨를 남기고, 오늘 온 손님을 한눈에 봐요.</p></div>
+    <div class="card"><h2>통계 · 엑셀</h2><p>기간별 방문·신규 고객 통계를 보고, 고객 목록을 엑셀로 내보내요.</p></div>
+    <div class="card"><h2>기기 동기화</h2><p>태블릿·휴대폰·PC에서 같은 기록을 봐요. 기록은 기기에서 잠근 뒤 올라가서 운영자도 볼 수 없어요.</p></div>
+    <div class="card"><h2>인터넷 없이도</h2><p>기록은 기기에 저장돼서 인터넷이 끊겨도 그대로 써요.</p></div>
+  </div>
 
-<section>
-  <h2><i>1</i>누가 어떤 정보를 다루나요</h2>
-  <p>앱에는 두 종류의 정보가 있어요.</p>
-  <table>
-    <tr><th>구분</th><th>내용</th><th>책임</th></tr>
-    <tr><td>고객 정보</td><td>앱을 쓰는 샵(사업자)이 고객에게 받아 앱에 넣는 정보</td><td>각 샵이 개인정보처리자로서 관리해요. 고객의 열람·정정·삭제 요청은 해당 샵에 하시면 돼요.</td></tr>
-    <tr><td>앱 사용자 정보</td><td>동기화를 쓰는 사업자의 계정 정보(이메일 등)</td><td>앱 개발자가 이 방침에 따라 처리해요.</td></tr>
-  </table>
-</section>
+  <h3>이용 요금</h3>
+  <p>처음 7일은 모든 기능을 무료로 써보세요.</p>
+  <div class="price"><div class="row">
+    <div class="plan best"><b>평생 이용권</b><div class="p">14,900원</div><small>한 번 결제로 계속 · 업데이트 포함</small></div>
+    <div class="plan"><b>월 구독</b><div class="p">2,500원<small>/월</small></div><small>언제든 해지할 수 있어요</small></div>
+  </div></div>
 
-<section>
-  <h2><i>2</i>앱 안에 저장되는 정보</h2>
-  <p>샵이 앱을 쓰면서 아래 정보가 <b>기기 안</b>에 저장될 수 있어요.</p>
-  <table>
-    <tr><th>항목</th><th>예</th></tr>
-    <tr><td>고객 기본 정보</td><td>이름(손글씨 이미지 포함), 연락처, 생년월일, 성별, 키, 알게 된 경로</td></tr>
-    <tr><td>건강 관련 정보</td><td>건강 체크 답변, 통증 정도, 불편한 부위 표시, 관리 요청사항, 방문 기록, 원장 메모·필기</td></tr>
-    <tr><td>동의 기록</td><td>동의서 이미지, 서명, 동의 항목(필수·선택), 작성 일시</td></tr>
-    <tr><td>체형 사진·측정값</td><td>정면·옆면 사진(얼굴은 자동으로 가림), 기울기·각도 등 측정값, 결과지</td></tr>
-    <tr><td>샵 설정</td><td>샵 이름·로고, 관리자 PIN(복원할 수 없는 형태로 저장), 동의서 양식</td></tr>
-  </table>
-  <p class="note">건강 관련 정보와 사진은 민감한 정보예요. 샵은 앱의 동의서 기능 등으로 고객에게 수집·이용 동의를 받은 뒤 사용해야 해요.</p>
-</section>
-
-<section>
-  <h2><i>3</i>기기 간 동기화 (선택)</h2>
-  <p>설정에서 동기화를 켜면 같은 계정의 태블릿·휴대폰끼리 기록을 맞추기 위해 아래 정보가 서버(Google Firebase)에 저장돼요.</p>
-  <table>
-    <tr><th>항목</th><th>목적</th><th>보관</th></tr>
-    <tr><td>이메일, 비밀번호(Firebase가 암호화해 보관)</td><td>로그인</td><td rowspan="3">계정을 삭제할 때까지</td></tr>
-    <tr><td>암호화된 기록·사진, 기록 종류·번호·수정 시각</td><td>기기 간 동기화</td></tr>
-    <tr><td>연결된 기기 이름(예: 태블릿 · SM-X…), 마지막 접속 시각</td><td>연결된 기기 표시</td></tr>
-  </table>
-  <ul>
-    <li>기록과 사진은 기기에서 <b>AES-256 방식으로 잠근 뒤</b> 올라가요. 잠금을 푸는 열쇠는 사용자의 로그인 비밀번호나 ‘동기화 코드’로 다시 잠가서 보관하기 때문에, 운영자는 기록 내용을 볼 수 없어요.</li>
-    <li>원본 사진은 찍은 기기에만 두고 서버에 올리지 않아요.</li>
-    <li>서버는 Google LLC의 Firebase(Authentication, Cloud Firestore)를 써요. 접속 과정에서 IP 주소 등 기술 정보가 Google에 전달될 수 있어요.</li>
-  </ul>
-</section>
-
-<section>
-  <h2><i>4</i>권한과 외부 기능</h2>
-  <table>
-    <tr><th>권한·기능</th><th>쓰는 곳</th></tr>
-    <tr><td>카메라</td><td>체형 사진 촬영. 찍은 사진은 기기 안에만 저장돼요.</td></tr>
-    <tr><td>사진·파일 고르기</td><td>갤러리 사진 불러오기, 샵 로고 넣기, 백업 파일 복원 (사용자가 고른 파일만)</td></tr>
-    <tr><td>인터넷</td><td>동기화(켠 경우), 손글씨 인식 모델 내려받기</td></tr>
-    <tr><td>손글씨 이름 읽기</td><td>안드로이드에서 Google ML Kit를 써요. 인식은 기기 안에서 하고, 처음 한 번 인식 모델을 Google에서 내려받아요. ML Kit는 기능 개선을 위해 기기·앱 성능 정보를 Google에 보낼 수 있어요(손글씨 내용은 보내지 않아요).</td></tr>
-    <tr><td>공유(결과지·PDF·백업·의견 보내기)</td><td>사용자가 직접 고른 앱(카카오톡, 메일 등)으로만 보내요. 의견 보내기에는 앱 버전·기기 정보가 붙고 고객 정보는 들어가지 않아요.</td></tr>
-  </table>
-</section>
-
-<section>
-  <h2><i>5</i>보관 기간과 삭제</h2>
-  <ul>
-    <li><b>기기 안의 기록</b>: 샵이 지우거나 앱을 삭제할 때까지 보관돼요. 고객 상세 화면의 ‘고객 삭제’로 그 고객의 동의서·방문 기록·사진이 함께 지워져요.</li>
-    <li><b>서버의 기록과 계정</b>: 앱의 <b>⚙ 설정 › 기기 간 동기화 › 계정 삭제</b>를 누르면 서버의 모든 기록·사진·기기 정보와 계정이 바로 지워져요. 앱을 쓸 수 없는 경우의 방법은 <a href="delete-account.html">계정 삭제 안내</a>를 보세요.</li>
-    <li><b>백업 파일</b>: 사용자가 만든 백업 파일(.rbk)은 사용자가 보관한 곳(구글 드라이브 등)에 있어요. 비밀번호를 걸 수 있고, 지우는 것도 사용자가 해요.</li>
-  </ul>
-</section>
-
-<section>
-  <h2><i>6</i>제3자 제공·처리 위탁</h2>
-  <p>개인정보를 제3자에게 팔거나 제공하지 않아요. 동기화를 켠 경우에만 서버 운영을 Google LLC(Firebase)에 맡기며, 이때 올라가는 기록은 위 3번처럼 암호화되어 있어요. 서버는 국외(Google 데이터센터)에 있을 수 있어요.</p>
-</section>
-
-<section>
-  <h2><i>7</i>안전하게 지키는 방법</h2>
-  <ul>
-    <li>관리자 화면과 설정은 관리자 PIN으로 잠겨요. 쓰지 않으면 자동으로 닫히게 할 수 있어요.</li>
-    <li>동기화 기록·사진은 기기에서 암호화해 보내고, 서버는 계정 주인만 읽고 쓸 수 있게 막아 두었어요.</li>
-    <li>체형 사진은 화면과 결과지에서 얼굴을 자동으로 가려요.</li>
-  </ul>
-</section>
-
-<section>
-  <h2><i>8</i>아동의 정보</h2>
-  <p>앱은 사업자가 쓰는 앱이에요. 만 14세 미만 고객의 정보를 넣을 때는 샵이 법정대리인의 동의를 받아야 해요.</p>
-</section>
-
-<section>
-  <h2><i>9</i>문의</h2>
-  <p>개인정보 관련 문의, 계정 삭제 요청은 아래로 연락해 주세요.</p>
-  <p class="note">반듯 체형측정 개발자 · 이메일 <a href="mailto:arsirin@naver.com">arsirin@naver.com</a></p>
-  <p>이 방침이 바뀌면 이 페이지에 바뀐 내용과 시행일을 알려드려요.</p>
-</section>
-
-</main>
-<footer>© 2026 반듯 체형측정</footer>
+  <div class="pc">
+    <p><b>PC에서 보기</b></p>
+    <p>앱에서 동기화를 켠 뒤, PC 브라우저로 <a href="app/">bandeut.co.kr/app</a>에 들어가 같은 이메일·비밀번호로 로그인하세요.</p>
+  </div>
+</div></main>
+<footer>
+  <a href="privacy.html">개인정보처리방침</a>·<a href="delete-account.html">계정 삭제</a>·<a href="mailto:arsirin@naver.com">문의</a>
+  <p>© 반듯 체형측정</p>
+</footer>
 </body>
 </html>
