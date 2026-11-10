@@ -901,6 +901,7 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .plan:disabled{opacity:.55}
 .plan:not(:disabled):active{transform:scale(.98)}
 .passnote{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}.passnote.warn{color:#8a3d1f;font-weight:600}
-.redeem{display:flex;gap:8px;align-items:center}.redeem input{flex:1;min-width:0;text-transform:uppercase;letter-spacing:.05em}
+.redeem{display:flex;gap:8px;align-items:stretch}.redeem input{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;font-size:15px;outline:none}.redeem input:focus{border-color:var(--navy);box-shadow:0 0 0 3px var(--navy-soft)}.redeem button{flex:none;white-space:nowrap}
+.passfoot .link{white-space:nowrap;flex:none}
 .passfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--hair);padding-top:10px}
 @media (max-width:420px){.plans{grid-template-columns:1fr}}
