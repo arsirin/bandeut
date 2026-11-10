@@ -901,5 +901,6 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .plan:disabled{opacity:.55}
 .plan:not(:disabled):active{transform:scale(.98)}
 .passnote{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}.passnote.warn{color:#8a3d1f;font-weight:600}
+.redeem{display:flex;gap:8px;align-items:center}.redeem input{flex:1;min-width:0;text-transform:uppercase;letter-spacing:.05em}
 .passfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--hair);padding-top:10px}
 @media (max-width:420px){.plans{grid-template-columns:1fr}}
