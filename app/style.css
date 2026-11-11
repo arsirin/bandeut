@@ -905,3 +905,5 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .passfoot .link{white-space:nowrap;flex:none}
 .passfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--hair);padding-top:10px}
 @media (max-width:420px){.plans{grid-template-columns:1fr}}
+
+.paylog{white-space:pre-wrap;word-break:break-all;font-size:11px;line-height:1.4;background:#f6f7f9;color:#344c65;border-radius:8px;padding:8px;margin:8px 0 0;max-height:220px;overflow:auto}
