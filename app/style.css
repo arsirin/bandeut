@@ -206,9 +206,9 @@ input,textarea,select{font:inherit;color:inherit}
 @media (max-width:600px){.srow.sub,.sblock.ind{padding-left:16px}}
 
 /* 확인창 */
-.overlay{position:fixed;inset:0;background:rgba(30,43,58,.4);display:grid;place-items:center;grid-template-columns:minmax(0,1fr);z-index:30;padding:16px;animation:ovin .15s ease-out}
+.overlay{position:fixed;inset:0;background:rgba(30,43,58,.4);display:grid;place-items:center;grid-template-columns:minmax(0,1fr);z-index:30;padding:calc(16px + var(--satx)) calc(16px + var(--sarx)) calc(16px + var(--sabx)) calc(16px + var(--salx));animation:ovin .15s ease-out}
 @keyframes ovin{from{opacity:0}}
-.dialog{width:100%;max-width:440px;margin:0 auto;padding:24px;display:flex;flex-direction:column;gap:16px;box-shadow:var(--sh2);border-color:transparent;border-radius:22px;max-height:calc(100vh - 32px);overflow:auto;animation:dlin .18s ease-out}
+.dialog{width:100%;max-width:440px;margin:0 auto;padding:24px;display:flex;flex-direction:column;gap:16px;box-shadow:var(--sh2);border-color:transparent;border-radius:22px;max-height:calc(100vh - 32px - var(--satx) - var(--sabx));max-height:calc(100dvh - 32px - var(--satx) - var(--sabx));overflow:auto;animation:dlin .18s ease-out}
 @keyframes dlin{from{transform:translateY(10px) scale(.98);opacity:.6}}
 .dialog h2{margin:0;font-size:20px}
 .dfoot{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-top:4px}
@@ -907,3 +907,7 @@ body{word-break:keep-all;overflow-wrap:break-word}
 @media (max-width:420px){.plans{grid-template-columns:1fr}}
 
 .paylog{white-space:pre-wrap;word-break:break-all;font-size:11px;line-height:1.4;background:#f6f7f9;color:#344c65;border-radius:8px;padding:8px;margin:8px 0 0;max-height:220px;overflow:auto}
+
+/* 길어서 스크롤되는 창에서도 저장·취소 줄은 항상 창 아래에 보이게 (휴대폰 하단 버튼과 겹치지 않음) */
+.dialog > .dfoot:last-child,.dialog > .row.end:last-child{position:sticky;bottom:-24px;z-index:2;background:var(--paper);margin:0 -24px -24px;padding:12px 24px 24px;border-top:1px solid var(--line)}
+.dialog.confirm > .dfoot:last-child{position:static;margin:0;padding:0;border-top:0;background:none}
